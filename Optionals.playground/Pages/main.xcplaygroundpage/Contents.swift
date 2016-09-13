@@ -144,14 +144,14 @@ produceFullName(withFirstName: "Michelle", middleName: "Lynn", lastName: "St8ton
 /*: question11
  ### 11. Declare another _constant_ optional string, and set it to `nil` immediately. Then, on the next line, assign a string value to it. What happens?
  */
-func billsDue(bills: String?) -> String {
-    var allBillz = bills
-    if let bills = bills {
-        allBillz = "\(bills)"
+func nicknameIs(nickname: String?) {
+    let name = nickname
+    if let nickname = nickname {
+        nickname == "\(name) \(nickname)"
     }
-    return allBillz!
 }
 
+nicknameIs(nil)
 
 
 
